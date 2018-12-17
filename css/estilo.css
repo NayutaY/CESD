@@ -1,0 +1,463 @@
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    background-color: white;
+}
+
+table {
+    _border-collapse: collapse;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    color: #660000;
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cc0033;
+}
+
+input, select {
+    font-size: 11px;
+    border: 1px #ccc solid;
+}
+
+textarea {
+    alignment-adjust: central;
+    font-size: 11px;
+    border: 1px #ccc solid;
+}
+
+
+.botones {
+    text-transform:uppercase;
+
+}
+
+/* Div */
+
+#wrapper {
+    font-size: 12px;
+    line-height: 1.35em;
+    text-align: left;
+}
+
+#boxHeader {
+    height: 75px;
+    background-color: #000000;
+    border-bottom: 1px #000000 solid;
+    color: #FFFFFF;
+}
+
+#boxHeaderLogo {
+    width: 630px;
+    height: 75px;
+    background-color: black;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#boxHeaderRight {
+    top: 0px;
+    right: 30px;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+}
+
+#boxHeaderRight a {
+    top: 10px;
+    right: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+#boxContentHome {
+    margin: 0 30px 0 30px;
+    background-color: #fff;
+    border: 1px #d7d7d7 solid;
+}
+#boxContentInside {
+    margin: 1px 30px 0 30px;
+    /*	background-color: #e1e1e1; */
+}
+
+#boxContentTitle {
+    height: 25px;
+    padding-left: 10px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #fffafa;
+    background-color: #7b6e6a;
+}
+
+#boxContentTitle a {
+    color: #faffbd;
+}
+
+#boxContentLeft {
+    width: 200px;
+    background-color: #fff;
+    border: 1px #d7d7d7 solid;
+    float: left;
+}
+
+#boxContentLeft ul {
+    margin: 0;
+    padding: 0 5px 6px 5px;
+    list-style-type: none;
+}
+
+#boxContentLeft li {
+    padding: 2px;
+    border-bottom: 1px #808080 solid;
+    background-color: #f9fafa;
+}
+
+#boxContentLeft li a {
+    padding-left: 18px;
+    display: block;
+    background-position: 3px 1px;
+    background-repeat: no-repeat;
+    background-image: url(../images/gif/check.list.gif);
+}
+
+#boxContentLeft li a:hover {
+    background-color: #fff;
+}
+
+#boxContentRight {
+    margin-left: 207px;
+    background-color: #fff;
+    border: 1px #d7d7d7 solid;
+}
+
+#boxPanels {
+    padding: 10px 10px 10px 0;
+}
+
+#boxLoader, #boxEmailChk {
+    display: none;
+}
+
+#boxError, #boxMsg1, #boxMsg2 {
+    padding: 5px;
+    color: #ff0000;
+}
+
+#boxFooter {
+    height: 40px;
+    margin: 5px 30px 0 30px;
+    padding: 5px;
+    color: #7c7c7c;
+    font-size: 11px;
+    text-align: center;
+    border-top: 10px #e5e5e5 solid;
+    position: relative;
+}
+
+#boxContentLeft li.listTitle {
+    padding-left: 20px;
+    background-color: #cedef4;
+    background-position: 6px;
+    background-repeat: no-repeat;
+    background-image: url(../images/gif/arrow.gif);
+}
+
+.sectionTitle {
+    margin-top: 10px;
+    color: #cc0000;
+    font-weight: bold;
+    border-bottom: 3px #d7d7d7 solid;
+}
+
+.panelTitle {
+    padding: 5px;
+    font-weight: bold;
+    background-color: #cedef4;
+}
+
+.formTitle {
+    margin-bottom: 5px;
+    padding: 5px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #cc0000;
+}
+
+.formHints {
+    margin-bottom: 3px;
+    padding: 5px;
+    font-size: 11px;
+    background-color: #ffe5e5;
+}
+
+.boxBorder {
+    padding: 8px;
+    border: 1px #d7d7d7 solid;
+}
+
+.boxBorderRed {
+    padding: 5px;
+    border: 1px #CC0000 solid;
+}
+
+.boxMessage {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 11px;
+    font-style: italic;
+    text-align: right;
+    color: #CC0000;
+    background-color: #feffbb;
+}
+
+.tblRow1 {
+    font-size: 11px;
+    border-bottom: 1px #d7d7d7 solid;
+}
+
+.tblRow2 {
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 11px;
+    text-shadow: #969696 1px 1px 1px;
+    background-color: #efefef;
+    border-right: 1px #d7d7d7 solid;
+    border-bottom: 1px #d7d7d7 solid;
+}
+
+.tblTabActive {
+    height: 25px;
+    border: 1px #d7d7d7 solid;
+    border-bottom: 0;
+}
+
+.tblTabInactive {
+    height: 25px;
+    line-height: 25px;
+    background-color: #efefef;
+    border: 1px #fff solid;
+    border-bottom: 1px #d7d7d7 solid;
+}
+
+.tblTabInactive a {
+    display: block;
+}
+
+.tblTabInactive a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+}
+
+.imgBorder {
+    padding: 3px;
+    background-color: #fff;
+    border: 1px #bfce7c solid;
+}
+
+.buttonn {
+    width: 75px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    border: #000 1px solid;
+    background-color: #ccc;
+}
+
+.button a {
+    display: block;
+}
+
+.button a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+}
+
+.datechooser {
+    background: url("../images/gif/datechooser.png") no-repeat scroll right center transparent;
+}
+
+.imgProfile {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 1px;
+    border: #cc0000 1px solid;
+}
+
+.noBorder {
+    border: 0;
+}
+
+.frmRequired {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.cleaner {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* HighSlide Related */
+.highslide-html {
+    background-color: white;
+    text-align: left;
+}
+
+.highslide-html-content {
+    position: absolute;
+    display: none;
+}
+
+.highslide-loading {
+    display: block;
+    color: black;
+    font-size: 8pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px;
+    border: 1px solid black;
+    background-color: white;
+    padding-left: 22px;
+    background-image: url(../i/highslide/loader.white.gif);
+    background-repeat: no-repeat;
+    background-position: 3px 1px;
+}
+
+.highslide-dimming {
+    position: absolute;
+    background: #000;
+ ''   /*	background: #ab7e2f; */''
+}
+
+/* Styles for the popup */
+.highslide-wrapper {
+    background-color: white;
+}
+
+.highslide-html-content {
+    padding: 15px 5px 0 0;
+}
+
+.homePopup .highslide-maincontent, .aboutPopup .highslide-maincontent {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.4em;
+    color: #686868;
+}
+
+.aboutPopup .highslide-header {
+    display: none;
+}
+
+.homePopup .highslide-html-content, .aboutPopup .highslide-html-content {
+    margin: 0;
+    padding: 0;
+}
+
+.homePopup .highslide-footer, .aboutPopup .highslide-footer {
+    display: none;
+}
+
+.highslide-wrapper .highslide-header ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-family: Verdana, Helvetica;
+    font-size: 10pt;
+}
+
+.highslide-wrapper .highslide-header ul li {
+    display: inline;
+}
+
+.highslide-wrapper .highslide-header ul li.highslide-previous, .highslide-wrapper .highslide-header ul li.highslide-next, .highslide-wrapper .highslide-header ul li.highslide-move, .highslide-wrapper .highslide-header ul li.highslide-close, .highslide-resize {
+    display: none;
+}
+
+.highslide-wrapper .highslide-header a {
+    font-weight: bold;
+    color: gray;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.highslide-wrapper .highslide-header a:hover {
+    color: black;
+}
+
+.highslide-wrapper .highslide-header .highslide-move a {
+    cursor: move;
+}
+
+.highslide-wrapper .highslide-footer {
+    height: 11px;
+}
+
+.highslide-wrapper .highslide-footer .highslide-resize {
+    float: right;
+    height: 11px;
+    width: 11px;
+    background: url(/grfx/highslide/resize.gif);
+}
+
+.closebutton {
+    background: transparent url(/grfx/highslide/close.png) repeat scroll 0 0;
+    cursor: pointer;
+    height: 30px;
+    left: 15px;
+    position: relative;
+    top: -15px;
+    width: 30px;
+}
+
+/* These must be the last of the Highslide rules */
+.highslide-display-block {
+    display: block;
+}
+
+.highslide-display-none {
+    display: none;
+}
+/*Seleccion de filas */
+.even {
+    background:	#EFEFEF;
+}
+
+.odd {
+    background:	#CCCCCC;
+}
+.current {
+    background:#C4E1FF;
+}
+.selected{
+    background:	#FFFFE1;
+}
+table td{
+    font-size:12px
+}

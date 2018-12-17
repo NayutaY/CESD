@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Page-Enter" content="BlendTrans(duration=0.2)">
+<meta http-equiv="Page-Exit" content="BlendTrans(duration=0.5)">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Page-Enter" content="BlendTrans(Duration=1)Blend">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <title>Sistema Escolar</title>
+<link rel="icon" type="image/jpg" href="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/01/01a0f3c6e372347b6e8dc80fe26c1b0ff350c75d_full.jpg"/>
+<link href="C:\Users\dell\Desktop\Mejora\css/estilo.css" rel="stylesheet" type="text/css"/>
+<link href="estilo/sortabletable.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" type="text/javascript" src="js/mantenimientos.js"></script>
+
+<script>
+function desconectarse(){
+	f = document.DESCONECTARSE;
+	f.salir.value = 1;
+	f.submit();
+}
+function send_item(m,a){
+	f = document.MODULO;
+	f.m.value = m;
+	f.a.value = a;
+	f.submit()
+}
+function send_reporte_cur(m,a){
+	f = document.REPORTE;
+	f.m.value = m;
+	f.a.value = a;
+	f.submit()
+}
+function np(){
+	return;
+}
+</script>
+
+</head>
+<body  id="oVentPri">
+
+<div id="boxHeader">
+ <div id="boxHeaderLogo" style="text-transform:uppercase"> &nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C.E.S.D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <IMG SRC=http://photos1.blogger.com/blogger/4398/2897/1600/cesd.jpg width="80" height="73" align=middle>
+ </div>
+    <div id="boxHeaderRight">NayuSF 655-60630 &nbsp;&nbsp;<IMG SRC=https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/01/01a0f3c6e372347b6e8dc80fe26c1b0ff350c75d_full.jpg width="80" height="73" align=middle></div>
+</div>
+<form action="index.php" method="post" name="DESCONECTARSE" id="DESCONECTARSE">
+<input name="salir" type="hidden" id="salir" >
+</form>
+<form action="index.php" method="post" name="MODULO" id="MODULO" >
+<input name="m" type="hidden" id="m" >
+<input name="a" type="hidden" id="a" >
+<input name="nohead" type="hidden" id="nohead" value="0">
+</form>
+<form action="index.php" method="post" name="REPORTE" id="REPORTE" target="_blank" enctype="multipart/form-data">
+<input name="m" type="hidden" id="m" >
+<input name="a" type="hidden" id="a" >
+<input name="id_usuario" type="hidden" id="id_usuario" value="" >
+<input name="setreporte" type="hidden" id="setreporte" value="1">
+</form>
+<div id="wrapper">
+<div id="boxContentInside">
+<script>
+    function valida_forma(f) {
+        if (!validRequired(f.login, "Usuario"))
+            return false;
+        if (!validRequired(f.pass, "Contraseña"))
+            return false;
+        if (!validMenus(f.idioma, "Contraseña"))
+            return false;
+        return true
+    }
+    function envia() {
+        f = document.LOGIN;
+        a = valida_forma(f);
+        if (a) {
+            return true;
+        } else {
+            return false;
+        }
+        return false;
+
+    }
+
+
+</script>
+
+<form id="LOGIN" name="LOGIN" method="post" onsubmit="return envia()"  action="index.php" >
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="3" style="background-color:#FFFFFF">
+        <tr>
+            <td><table border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                    <tr>
+                        <td align="left" valign="top" style="border-right-color:#404040; border-right-style:solid; border-right-width:1px;"><table width="380" height="446" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td height="318" colspan="3" align="center" valign="center"><h1 style='font-size:16px;'>Sistema Escolar</h1>
+                                        <span class="lhy"> <br>
+                                            <IMG SRC=http://photos1.blogger.com/blogger/4398/2897/1600/cesd.jpg width="350" height="250" align=middle VSPACE=3 HSPACE=70>
+                                        </span>
+                                </tr>
+                                <tr>
+                                    <td width="96" height="70" align="left" valign="top">
+                                        <p>&nbsp;</p>
+                                    </td>
+                                    <td width="400" align="left" valign="top"><strong style="font-size:14px">Ingrese el usuario y contrase&ntilde;a para
+                                            obtener acceso a la consulta</strong></td>
+                                    <td width="100" align="left" valign="top">&nbsp;</td>
+                                </tr>
+                            </table></td>
+
+                        <td align="right" valign="top" class="the"><table  width="412" height="460" border="0" cellpadding="0" cellspacing="0" bgcolor="FFFFFF">
+                                <tr>
+                                    <td valign="top" style="padding-left:36px;padding-right:36px;padding-top:10px;padding-bottom:10px"><div style="font-size:16px; font-weight:bold">Panel de Usuario</div>
+                                        <input name="estalogueando" type="hidden" id="estalogueando" value="1" />
+                                        <br />
+                                        <table width="100%" height="240" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" valign="top">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" valign="top">
+                                                    <div  align="left" style="margin-bottom:10px;"><span style="font-size:16px; font-weight:bold">Cédula:</span><br />
+                                                        <input name="cedula" type="text" id="cedula" tabindex="1" style="width:320px;height:24px;border:3px solid #4f81bd;" />
+                                                        <span style="font-size:10px; font-weight:bold">Ej: 8-727-9898</span>
+                                                        &nbsp;&nbsp;</div>
+                                                    <div  align="left" style="margin-bottom:10px;"><span style="font-size:16px; font-weight:bold">Usuario:</span><br />
+                                                        <input name="login" type="password" id="login" tabindex="2" style="width:320px;height:24px;border:3px solid #4f81bd;" />
+                                                        &nbsp;&nbsp;</div>
+                                                    <div  align="left"><span style="font-size:16px; font-weight:bold">Contraseña:</span><br />
+                                                        <input name="pass" type="password" id="pass" tabindex="3" style="width:320px;height:24px;border:3px solid #4f81bd;" />
+                                                        &nbsp;&nbsp; </div>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td width="130" style="padding-top:10px"><div align="left">
+                                                                    <input type="submit" name="button" id="button" value="Acceder" />
+                                                                </div></td>
+                                                                <!--<td><div align="right" style="margin-top:5px; margin-right:10px"> <a style="font-size:12px" href="index.php?pagina=misc/recuperacion_contrasena">login_olvido_contrasena</a>&nbsp;&nbsp;</div></td>-->
+                                                        </tr>
+                                                    </table>
+                                                    <div id="error"  align="left" class="error" style="width:80%;font-size:11px;margin:16px;"></div></td>
+                                            </tr>
+                                        </table>
+                                        <hr />
+                                    </td>
+                                </tr>
+                            </table></td>
+                    </tr>
+                </table></td>
+        </tr>
+    </table>
+
+</form></body>
+</html>
